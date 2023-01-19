@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <h1>Email RSVP Demo</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
           id="name"
