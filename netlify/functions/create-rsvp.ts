@@ -32,3 +32,9 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
     statusCode: 201,
   };
 });
+
+// What are some next steps?
+
+// 1. Handle errors around both the database execution and the email sending and make sure we return the right status code
+// 2. Add an event table and update your rsvp table to have a foreign key to the event table
+// 3. Pull an RSVP from another platform (Discord for exampl)
